@@ -11,3 +11,27 @@ Create a README.md with: full name Бахур Владислав Павлови�
 Запит 3:
 Create a .gitignore for a C++/CMake project that ignores the build/ directory
 Результат: Created .gitignore with the build/ rule, common CMake-generated files, and compiled C++ artifacts. Verified that paths under build/ are ignored.
+
+=== Етап 2 ===
+
+Запит 1:Generate the content of the root CMakeLists.txt: cmake_minimum_required 3.14 or higher, project "hello" (C++), C++17 standard required, an executable target named "hello" built from main.cpp. It must work on Linux, macOS and Windows (MSVC).
+Результат: Added the root CMakeLists.txt with CMake 3.14 minimum, project hello, required C++17, and executable target hello from main.cpp. The configuration uses no platform-specific flags.
+
+I couldn’t run CMake validation because CMake isn’t installed in this environment. Also, main.cpp is currently absent from the worktree, so the target cannot configure until that source file is present.
+
+=== Етап 3 ===
+
+Запит 1: Create math_operations.h with the declaration int add(int a, int b); and #pragma once
+Результат: Added #pragma once and int add(int a, int b); to math_operations.h.
+
+Запит 2: Create math_operations.cpp implementing add() declared in math_operations.h
+Результат: Implemented add() in math_operations.cpp, including its header and returning a + b. The source compiled successfully with C++17 and warnings enabled.
+
+Запит 3: Create tests/unit_tests.cpp with Google Test tests for add(): a test named BasicAddition, plus tests for negative numbers, zero and large values
+Результат: Created unit_tests.cpp with Google Test cases for BasicAddition, negative numbers, zero, and large values near the int limits.
+I couldn’t compile or run the tests because Google Test headers aren’t installed in this environment.
+
+Запит 4: Update CMakeLists.txt: put math_operations.cpp into a static library target and link it to hello. Add Google Test via FetchContent (pin a stable release tag) with gtest_force_shared_crt ON for MSVC. Enable testing, add an executable unit_tests from tests/unit_tests.cpp, link it with the library and GTest::gtest_main, and register tests with gtest_discover_tests so CTest can find them.
+Результат: Updated CMakeLists.txt with a static math_operations library, linked it to hello and unit_tests, and added Google Test v1.16.0 via FetchContent with the MSVC CRT setting. CTest is enabled and discovers tests with gtest_discover_tests.
+
+CMake configuration and build succeeded; all 4 tests passed under CTest.
