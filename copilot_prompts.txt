@@ -33,5 +33,10 @@ I couldn’t compile or run the tests because Google Test headers aren’t insta
 
 Запит 4: Update CMakeLists.txt: put math_operations.cpp into a static library target and link it to hello. Add Google Test via FetchContent (pin a stable release tag) with gtest_force_shared_crt ON for MSVC. Enable testing, add an executable unit_tests from tests/unit_tests.cpp, link it with the library and GTest::gtest_main, and register tests with gtest_discover_tests so CTest can find them.
 Результат: Updated CMakeLists.txt with a static math_operations library, linked it to hello and unit_tests, and added Google Test v1.16.0 via FetchContent with the MSVC CRT setting. CTest is enabled and discovers tests with gtest_discover_tests.
-
 CMake configuration and build succeeded; all 4 tests passed under CTest.
+
+=== Етап 4 ===
+
+Запит 1: Create ci.sh (bash, set -euo pipefail) that: creates the build directory (mkdir -p build), cd build, configures with cmake .. -DCMAKE_BUILD_TYPE=Release, builds with cmake --build . --config Release, then runs tests with ctest -C Release --output-on-failure. It must work on Linux, macOS and Windows (Git Bash with MSVC). It must run without any parameters.
+Результат: Created executable ci.sh with the requested parameterless configure, build, and CTest steps. It anchors itself to the repository directory, so it can be launched from elsewhere.
+bash -n passed, and running ci.sh built the project and passed all 4 tests.
