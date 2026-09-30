@@ -1,0 +1,13 @@
+=== Етап 1 ===
+
+Запит 1:
+Create a minimal C++ main.cpp that prints "Hello, World!" and returns 0
+Результат: Added main.cpp. It compiles cleanly and prints Hello, World!, then returns 0.
+
+Запит 2:
+Create a README.md with: full name Бахур Владислав Павлович, group КІ-405, variant 3
+Результат: Updated README.md with the full name Бахур Владислав Павлович, group КІ-405, and variant 3.
+
+Запит 3:
+Create a .gitignore for a C++/CMake project that ignores the build/ directory
+Результат: Created .gitignore with the build/ rule, common CMake-generated files, and compiled C++ artifacts. Verified that paths under build/ are ignored.
