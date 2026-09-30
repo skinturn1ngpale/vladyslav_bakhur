@@ -1,6 +1,10 @@
 === Етап 1 ===
 
+feature/develop/2-cmake
 Запит 1:git status
+
+Запит 1:
+main
 Create a minimal C++ main.cpp that prints "Hello, World!" and returns 0
 Результат: Added main.cpp. It compiles cleanly and prints Hello, World!, then returns 0.
 
@@ -11,3 +15,10 @@ Create a README.md with: full name Бахур Владислав Павлови�
 Запит 3:
 Create a .gitignore for a C++/CMake project that ignores the build/ directory
 Результат: Created .gitignore with the build/ rule, common CMake-generated files, and compiled C++ artifacts. Verified that paths under build/ are ignored.
+
+=== Етап 2 ===
+
+Запит 1:Generate the content of the root CMakeLists.txt: cmake_minimum_required 3.14 or higher, project "hello" (C++), C++17 standard required, an executable target named "hello" built from main.cpp. It must work on Linux, macOS and Windows (MSVC).
+Результат: Added the root CMakeLists.txt with CMake 3.14 minimum, project hello, required C++17, and executable target hello from main.cpp. The configuration uses no platform-specific flags.
+
+I couldn’t run CMake validation because CMake isn’t installed in this environment. Also, main.cpp is currently absent from the worktree, so the target cannot configure until that source file is present.
