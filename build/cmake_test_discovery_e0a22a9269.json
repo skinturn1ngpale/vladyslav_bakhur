@@ -1,0 +1,32 @@
+{
+  "tests": 4,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "MathOperationsTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "BasicAddition",
+          "file": "\/Users\/skinturningpale\/Desktop\/\u00D0\u009D\u00D0\u00B0\u00D0\u00B2\u00D1\u0087\u00D0\u00B0\u00D0\u00BD\u00D0\u00BD\u00D1\u008F\/\u00D0\u0090\u00D0\u009F\u00D0\u009A\u00D0\u00A1\/vladyslav_bakhur\/tests\/unit_tests.cpp",
+          "line": 7
+        },
+        {
+          "name": "NegativeNumbers",
+          "file": "\/Users\/skinturningpale\/Desktop\/\u00D0\u009D\u00D0\u00B0\u00D0\u00B2\u00D1\u0087\u00D0\u00B0\u00D0\u00BD\u00D0\u00BD\u00D1\u008F\/\u00D0\u0090\u00D0\u009F\u00D0\u009A\u00D0\u00A1\/vladyslav_bakhur\/tests\/unit_tests.cpp",
+          "line": 11
+        },
+        {
+          "name": "Zero",
+          "file": "\/Users\/skinturningpale\/Desktop\/\u00D0\u009D\u00D0\u00B0\u00D0\u00B2\u00D1\u0087\u00D0\u00B0\u00D0\u00BD\u00D0\u00BD\u00D1\u008F\/\u00D0\u0090\u00D0\u009F\u00D0\u009A\u00D0\u00A1\/vladyslav_bakhur\/tests\/unit_tests.cpp",
+          "line": 16
+        },
+        {
+          "name": "LargeValues",
+          "file": "\/Users\/skinturningpale\/Desktop\/\u00D0\u009D\u00D0\u00B0\u00D0\u00B2\u00D1\u0087\u00D0\u00B0\u00D0\u00BD\u00D0\u00BD\u00D1\u008F\/\u00D0\u0090\u00D0\u009F\u00D0\u009A\u00D0\u00A1\/vladyslav_bakhur\/tests\/unit_tests.cpp",
+          "line": 22
+        }
+      ]
+    }
+  ]
+}

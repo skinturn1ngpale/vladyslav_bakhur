@@ -1,0 +1,3 @@
+/Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+/Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+/Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir

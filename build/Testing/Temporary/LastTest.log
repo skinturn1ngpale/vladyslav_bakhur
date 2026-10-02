@@ -1,0 +1,111 @@
+Start testing: Sep 30 19:36 EEST
+----------------------------------------------------------
+1/4 Testing: MathOperationsTest.BasicAddition
+1/4 Test: MathOperationsTest.BasicAddition
+Command: "/Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/unit_tests" "--gtest_filter=MathOperationsTest.BasicAddition" "--gtest_also_run_disabled_tests"
+Directory: /Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build
+"MathOperationsTest.BasicAddition" start time: Sep 30 19:36 EEST
+Output:
+----------------------------------------------------------
+Running main() from /Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MathOperationsTest.BasicAddition
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MathOperationsTest
+[ RUN      ] MathOperationsTest.BasicAddition
+[       OK ] MathOperationsTest.BasicAddition (0 ms)
+[----------] 1 test from MathOperationsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MathOperationsTest.BasicAddition" end time: Sep 30 19:36 EEST
+"MathOperationsTest.BasicAddition" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: MathOperationsTest.NegativeNumbers
+2/4 Test: MathOperationsTest.NegativeNumbers
+Command: "/Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/unit_tests" "--gtest_filter=MathOperationsTest.NegativeNumbers" "--gtest_also_run_disabled_tests"
+Directory: /Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build
+"MathOperationsTest.NegativeNumbers" start time: Sep 30 19:36 EEST
+Output:
+----------------------------------------------------------
+Running main() from /Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MathOperationsTest.NegativeNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MathOperationsTest
+[ RUN      ] MathOperationsTest.NegativeNumbers
+[       OK ] MathOperationsTest.NegativeNumbers (0 ms)
+[----------] 1 test from MathOperationsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MathOperationsTest.NegativeNumbers" end time: Sep 30 19:36 EEST
+"MathOperationsTest.NegativeNumbers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: MathOperationsTest.Zero
+3/4 Test: MathOperationsTest.Zero
+Command: "/Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/unit_tests" "--gtest_filter=MathOperationsTest.Zero" "--gtest_also_run_disabled_tests"
+Directory: /Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build
+"MathOperationsTest.Zero" start time: Sep 30 19:36 EEST
+Output:
+----------------------------------------------------------
+Running main() from /Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MathOperationsTest.Zero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MathOperationsTest
+[ RUN      ] MathOperationsTest.Zero
+[       OK ] MathOperationsTest.Zero (0 ms)
+[----------] 1 test from MathOperationsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MathOperationsTest.Zero" end time: Sep 30 19:36 EEST
+"MathOperationsTest.Zero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: MathOperationsTest.LargeValues
+4/4 Test: MathOperationsTest.LargeValues
+Command: "/Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/unit_tests" "--gtest_filter=MathOperationsTest.LargeValues" "--gtest_also_run_disabled_tests"
+Directory: /Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build
+"MathOperationsTest.LargeValues" start time: Sep 30 19:36 EEST
+Output:
+----------------------------------------------------------
+Running main() from /Users/skinturningpale/Desktop/Навчання/АПКС/vladyslav_bakhur/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MathOperationsTest.LargeValues
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MathOperationsTest
+[ RUN      ] MathOperationsTest.LargeValues
+[       OK ] MathOperationsTest.LargeValues (0 ms)
+[----------] 1 test from MathOperationsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MathOperationsTest.LargeValues" end time: Sep 30 19:36 EEST
+"MathOperationsTest.LargeValues" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 30 19:36 EEST

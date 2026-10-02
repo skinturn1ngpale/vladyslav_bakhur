@@ -1,0 +1,5 @@
+MathOperationsTest.BasicAddition 2 0.00306156
+MathOperationsTest.NegativeNumbers 2 0.00191356
+MathOperationsTest.Zero 2 0.0020635
+MathOperationsTest.LargeValues 2 0.00174208
+---
