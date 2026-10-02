@@ -46,3 +46,8 @@ bash -n passed, and running ci.sh built the project and passed all 4 tests.
 Запит 1: Create a GitHub Actions workflow named CI Build. Triggers: push and pull_request on branches matching '**develop**' and '**master**'. One job named cross_build with strategy fail-fast: false and a matrix over ubuntu-latest, windows-latest, macos-latest (runs-on: ${{ matrix.os }}). Steps: actions/checkout@v4; a step to set up CMake; a step "Build" that runs ./ci.sh with shell: bash; a separate step named "Run Unit Tests" that runs ctest -C Release --output-on-failure in the build directory with shell: bash; a "Deploy" step using actions/upload-artifact@v4 that uploads the hello executable (build/hello on Linux and macOS, build/Release/hello.exe on Windows), artifact name hello-${{ matrix.os }}, if-no-files-found: error.
 Результат: Created ci_build.yml with the requested triggers, cross-platform build matrix, CMake setup, build and test steps, and OS-specific artifact paths.
 The editor reports no YAML errors. actionlint was unavailable, so I couldn’t run that workflow-specific validator.
+
+=== Етап 5 - Виправлення ===
+
+Запит 1: GitHub Actions reports "You have an error in your yaml syntax on line 4" for .github/workflows/ci_build.yml. Fix the YAML syntax. Branch patterns like '**develop**' and '**master**' must be quoted strings.
+Результат: Fixed the YAML indentation in ci_build.yml by replacing tabs with spaces. The branch patterns remain quoted. Ruby’s YAML parser now reports YAML syntax OK.
