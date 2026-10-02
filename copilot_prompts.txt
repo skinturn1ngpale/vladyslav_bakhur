@@ -40,3 +40,9 @@ CMake configuration and build succeeded; all 4 tests passed under CTest.
 Запит 1: Create ci.sh (bash, set -euo pipefail) that: creates the build directory (mkdir -p build), cd build, configures with cmake .. -DCMAKE_BUILD_TYPE=Release, builds with cmake --build . --config Release, then runs tests with ctest -C Release --output-on-failure. It must work on Linux, macOS and Windows (Git Bash with MSVC). It must run without any parameters.
 Результат: Created executable ci.sh with the requested parameterless configure, build, and CTest steps. It anchors itself to the repository directory, so it can be launched from elsewhere.
 bash -n passed, and running ci.sh built the project and passed all 4 tests.
+
+=== Етап 5 ===
+
+Запит 1: Create a GitHub Actions workflow named CI Build. Triggers: push and pull_request on branches matching '**develop**' and '**master**'. One job named cross_build with strategy fail-fast: false and a matrix over ubuntu-latest, windows-latest, macos-latest (runs-on: ${{ matrix.os }}). Steps: actions/checkout@v4; a step to set up CMake; a step "Build" that runs ./ci.sh with shell: bash; a separate step named "Run Unit Tests" that runs ctest -C Release --output-on-failure in the build directory with shell: bash; a "Deploy" step using actions/upload-artifact@v4 that uploads the hello executable (build/hello on Linux and macOS, build/Release/hello.exe on Windows), artifact name hello-${{ matrix.os }}, if-no-files-found: error.
+Результат: Created ci_build.yml with the requested triggers, cross-platform build matrix, CMake setup, build and test steps, and OS-specific artifact paths.
+The editor reports no YAML errors. actionlint was unavailable, so I couldn’t run that workflow-specific validator.
